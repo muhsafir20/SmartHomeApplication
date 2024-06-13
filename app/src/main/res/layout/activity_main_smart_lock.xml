@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSmartLock"
+    android:background="@drawable/wwalpaper">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_6"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/BackMainLock"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/blue_6"
+            android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sharetech"
+            android:text="Smart Lock"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ToolbarMainLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sharetech"
+        android:text="Smart Gas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/SwitchButtonLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Lock   "
+        android:textOff="Off"
+        android:textOn="On"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:thumb="@drawable/switch_thumb"
+        app:layout_constraintBottom_toTopOf="@+id/ToolbarMainLock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLock"
+        app:layout_constraintVertical_bias="0.011"
+        app:showText="true"
+        app:track="@drawable/switch_track" />
+
+    <ImageView
+        android:id="@+id/imageLock"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/lock1"
+        app:layout_constraintBottom_toTopOf="@+id/ToolbarMainLock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.237" />
+
+
+    <!-- Submit Button -->
+
+    <EditText
+        android:id="@+id/editTextRFID"
+        android:layout_width="303dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_rfid"
+        android:drawablePadding="8dp"
+        android:hint="Enter RFID"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SwitchButtonLock" />
+
+    <Button
+        android:id="@+id/buttonSubmitRFID"
+        android:layout_width="161dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/blue_6"
+        android:textColor="@color/black"
+        android:text="Submit"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRFID" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

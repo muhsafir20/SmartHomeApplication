@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.234.100</domain> //gas
+        <domain includeSubdomains="true">192.168.234.110</domain> //sensor
+        <domain includeSubdomains="true">192.168.234.150</domain> //lamp
+        <domain includeSubdomains="true">192.168.234.130</domain> //door
+        <domain includeSubdomains="true">192.168.234.140</domain> //rfid door
+    </domain-config>
+</network-security-config>

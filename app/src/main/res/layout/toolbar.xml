@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="12dp"
+    android:background="@color/blue_6">
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:onClick="ClickMenu"
+        android:src="@drawable/menu_24"/>
+
+    <TextView
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:text="Smart Home"
+        android:fontFamily="@font/sharetech"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
